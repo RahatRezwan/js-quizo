@@ -1,7 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layouts/Main";
-import { Blogs, Home, Questions, Statistics } from "./components";
+import { Blogs, Home, Questions, Statistics, Topics } from "./components";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -16,6 +16,11 @@ function App() {
         {
           path: "/",
           element: <Home />,
+          loader: async () => await fetch("https://openapi.programming-hero.com/api/quiz"),
+        },
+        {
+          path: "/topics",
+          element: <Topics />,
           loader: async () => await fetch("https://openapi.programming-hero.com/api/quiz"),
         },
         {

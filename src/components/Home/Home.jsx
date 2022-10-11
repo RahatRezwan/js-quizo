@@ -8,7 +8,6 @@ import Topic from "../Topic/Topic";
 const Home = () => {
   const data = useLoaderData();
   const topics = data.data;
-  console.log(topics);
   return (
     <div className="px-0">
       <Header />

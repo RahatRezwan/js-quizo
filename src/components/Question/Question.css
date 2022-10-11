@@ -6,3 +6,7 @@
 .disable {
   pointer-events: none;
 }
+
+.see-ans {
+  cursor: pointer;
+}

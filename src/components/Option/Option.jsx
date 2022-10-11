@@ -20,7 +20,7 @@ const Option = ({
     right ? setRightCount((prev) => prev + 1) : setWrongCount((prev) => prev + 1);
     right
       ? (message = "Congratulations! Your Answer is Correct!")
-      : (message = "Sorry! You have selected wrong answer");
+      : (message = `Sorry! You have selected wrong answer.`);
     notify(message);
     handleDisable(id);
   };

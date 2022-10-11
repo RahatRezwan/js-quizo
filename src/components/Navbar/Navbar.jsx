@@ -8,6 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const menuItems = [
   { link: "/", title: "Home" },
+  { link: "topics", title: "Topics" },
   { link: "statistics", title: "Statistics" },
   { link: "blogs", title: "Blogs" },
 ];
