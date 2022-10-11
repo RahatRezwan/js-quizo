@@ -12,6 +12,7 @@ function App() {
         {
           path: "/",
           element: <Home />,
+          loader: async () => await fetch("https://openapi.programming-hero.com/api/quiz"),
         },
         {
           path: "/statistics",

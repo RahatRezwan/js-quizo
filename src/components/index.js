@@ -6,5 +6,6 @@ import Blogs from "./Blogs/Blogs";
 import Questions from "./Questions/Questions";
 import Question from "./Question/Question";
 import Statistics from "./Statistics/Statistics";
+import Topic from "./Topic/Topic";
 
-export { NavBar, Home, Header, Article, Blogs, Question, Questions, Statistics };
+export { NavBar, Home, Header, Article, Blogs, Question, Questions, Statistics, Topic };

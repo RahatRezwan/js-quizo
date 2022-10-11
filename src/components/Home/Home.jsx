@@ -1,12 +1,26 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "./Home.css";
 import Header from "../Header/Header";
+import { useLoaderData } from "react-router-dom";
+import Topic from "../Topic/Topic";
+
 const Home = () => {
+  const data = useLoaderData();
+  const topics = data.data;
+  console.log(topics);
   return (
     <div className="px-0">
       <Header />
-      <Container></Container>
+      <Container>
+        <Row xs={1} md={2} lg={3}>
+          {topics.map((topic) => (
+            <Col>
+              <Topic key={topic.id} topic={topic} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 };
