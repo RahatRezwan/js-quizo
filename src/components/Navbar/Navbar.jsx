@@ -15,7 +15,7 @@ const menuItems = [
 const NavBar = () => {
   const activeStyle = { borderBottom: "4px solid #EEB30D" };
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Link href="/" className="logo-container">
           <img src={logo} alt="" className="img-fluid" />
