@@ -13,11 +13,3 @@
     width: 40%;
   }
 }
-@media screen and (max-width: 992px) {
-  .navbar-collapse {
-    text-align: end;
-  }
-  .menu-item {
-    margin-right: 0px;
-  }
-}

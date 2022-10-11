@@ -1,7 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layouts/Main";
-import { Home } from "./components";
+import { Blogs, Home, Statistics } from "./components";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +12,14 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/statistics",
+          element: <Statistics />,
+        },
+        {
+          path: "/blogs",
+          element: <Blogs />,
         },
       ],
     },
