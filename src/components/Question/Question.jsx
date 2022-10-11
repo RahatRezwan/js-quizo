@@ -1,19 +1,31 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Option from "../Option/Option";
 import "./Question.css";
 
-const Question = ({ que }) => {
+const Question = ({ que, setWrongCount, setRightCount, notify }) => {
   const { options, question, correctAnswer } = que;
 
   const ques = question.slice((1, 3), (-1, -4));
 
   return (
-    <div className="border text-start p-2 mb-4 rounded rounded-3">
+    <Container className="text-start p-3 mb-4 rounded rounded-3 question">
       <h3>{ques}</h3>
-      {options.map((option, index) => (
-        <Option key={index} option={option} />
-      ))}
-    </div>
+      <Row xs={1}>
+        {options.map((option, index) => (
+          <Col>
+            <Option
+              key={index}
+              option={option}
+              correctAnswer={correctAnswer}
+              setWrongCount={setWrongCount}
+              setRightCount={setRightCount}
+              notify={notify}
+            />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
 

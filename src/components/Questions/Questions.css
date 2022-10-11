@@ -1,0 +1,10 @@
+.summary {
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  position: fixed;
+  top: 25%;
+  right: 2%;
+}
