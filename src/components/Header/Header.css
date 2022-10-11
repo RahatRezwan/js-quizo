@@ -1,0 +1,26 @@
+.header-content {
+  font-family: "Poppins", sans-serif;
+  background: rgba(255, 255, 255, 0.732);
+  padding: 2.2vw 1.5vw;
+  border: none;
+  border-radius: 1vw;
+  width: 45vw;
+  position: absolute;
+  top: 23%;
+  bottom: 23%;
+  left: 45%;
+}
+
+.header-content h1 {
+  color: #eeb30d;
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
+  font-weight: 800;
+}
+.header-content h4 {
+  margin: 1vw 0;
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 2.2vw;
+  text-align: justify;
+}
