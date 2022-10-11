@@ -6,10 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const notify = (message) => {
-    toast(message);
-    console.log(message);
-  };
+  const notify = (message) => toast(message);
+
   const router = createBrowserRouter([
     {
       path: "/",

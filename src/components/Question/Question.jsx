@@ -1,19 +1,24 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row } from "react-bootstrap";
 import Option from "../Option/Option";
 import "./Question.css";
 
 const Question = ({ que, setWrongCount, setRightCount, notify }) => {
-  const { options, question, correctAnswer } = que;
+  const [disable, setDisable] = useState(false);
 
+  const { options, question, correctAnswer, id } = que;
   const ques = question.slice((1, 3), (-1, -4));
 
+  const handleDisable = (id) => {
+    id === que.id ? setDisable(true) : setDisable(false);
+  };
+
   return (
-    <Container className="text-start p-3 mb-4 rounded rounded-3 question">
+    <Container className="text-start p-3 mb-5 rounded rounded-3 question">
       <h3>{ques}</h3>
       <Row xs={1}>
         {options.map((option, index) => (
-          <Col>
+          <div className={disable && "disable"}>
             <Option
               key={index}
               option={option}
@@ -21,8 +26,10 @@ const Question = ({ que, setWrongCount, setRightCount, notify }) => {
               setWrongCount={setWrongCount}
               setRightCount={setRightCount}
               notify={notify}
+              id={id}
+              handleDisable={handleDisable}
             />
-          </Col>
+          </div>
         ))}
       </Row>
     </Container>

@@ -3,7 +3,15 @@ import "./Option.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const Option = ({ option, correctAnswer, setWrongCount, setRightCount, notify }) => {
+const Option = ({
+  option,
+  correctAnswer,
+  setWrongCount,
+  setRightCount,
+  notify,
+  id,
+  handleDisable,
+}) => {
   const [color, setColor] = useState(0);
   const handleAnswer = (selectedOption) => {
     let message;
@@ -14,7 +22,7 @@ const Option = ({ option, correctAnswer, setWrongCount, setRightCount, notify })
       ? (message = "Congratulations! Your Answer is Correct!")
       : (message = "Sorry! You have selected wrong answer");
     notify(message);
-    console.log(notify);
+    handleDisable(id);
   };
 
   return (
