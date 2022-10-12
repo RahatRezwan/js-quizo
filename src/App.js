@@ -33,6 +33,7 @@ function App() {
         {
           path: "/blogs",
           element: <Blogs />,
+          loader: () => fetch("blogs.json"),
         },
         {
           path: "/topics/:quizId",

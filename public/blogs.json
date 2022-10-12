@@ -1,20 +1,20 @@
 [
   {
     "id": "63463c204ad06ebc80a6726c",
-    "img": "something",
-    "questopm": "What is the purpose of React Router?",
+    "img": "./blog-img/blogs-1.jpg",
+    "question": "What is the purpose of React Router?",
     "answer": "React Router is used for develop a single page application. We can define multiple routes inside a single page using react router. When a user types a specific URL into the browser, and if this URL path matches any route inside the router file, the user will be redirected to that particular route. React Router plays an important role to display multiple views in a single page application. Without React Router, it is not possible to display multiple views in React applications. Most of the social media websites like Facebook, Instagram uses React Router for rendering multiple views."
   },
   {
     "id": "63463c208f2dffc262caf04e",
-    "img": "something",
-    "questopm": "How does context api work?",
+    "img": "./blog-img/blogs-2.jpg",
+    "question": "How does context api work?",
     "answer": "The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to \"prop drilling\" or moving props from grandparent to child to parent, and so on. React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as its names suggests provides the state to its children. It will hold the \"store\" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state."
   },
   {
     "id": "63463c209436de8dd8e2dad3",
-    "img": "something",
-    "questopm": "What is useRef()?",
+    "img": "./blog-img/blogs-3.jpg",
+    "question": "What is useRef()?",
     "answer": "useRef is like a “box” that can hold a mutable value in its .current property. If you pass a ref object to React with <div ref={myRef} />, React will set its .current property to the corresponding DOM node whenever that node changes. However, useRef() is useful for more than the ref attribute. It’s handy for keeping any mutable value around similar to how you’d use instance fields in classes."
   }
 ]
