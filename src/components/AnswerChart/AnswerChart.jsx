@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 const COLORS = ["rgba(11, 241, 11, 0.485)", "rgba(255, 5, 5, 0.485)"];
 const RADIAN = Math.PI / 180;
@@ -18,25 +18,26 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 const AnswerChart = ({ questionData }) => {
   const data = questionData;
   return (
-    <div>
+    <div style={{ width: "100%", height: 300 }}>
       <h5>Answer Chart</h5>
-      <PieChart width={300} height={200}>
-        <Pie
-          data={data}
-          cx={175}
-          cy={100}
-          labelLine={false}
-          label={renderCustomizedLabel}
-          outerRadius={80}
-          fill="#8884d8"
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-        <Tooltip />
-      </PieChart>
+      <ResponsiveContainer>
+        <PieChart>
+          <Pie
+            data={data}
+            cy={100}
+            labelLine={false}
+            label={renderCustomizedLabel}
+            outerRadius={80}
+            fill="#8884d8"
+            dataKey="value"
+          >
+            {data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+            ))}
+          </Pie>
+          <Tooltip />
+        </PieChart>
+      </ResponsiveContainer>
     </div>
   );
 };

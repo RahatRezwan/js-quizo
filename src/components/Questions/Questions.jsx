@@ -36,7 +36,7 @@ const Questions = ({ notify }) => {
             </Col>
           ))}
         </Row>
-        <div className="summary w-25 d-none d-md-block">
+        <div className="summary mx-auto">
           <h5>Result</h5>
           <h6>Correct Answer: {rightCount}</h6>
           <h6>Wrong Answer: {wrongCount}</h6>
