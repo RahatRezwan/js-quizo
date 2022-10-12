@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  //tost message
   const notify = (message) => toast(message);
 
   const router = createBrowserRouter([
@@ -26,6 +27,7 @@ function App() {
         {
           path: "/statistics",
           element: <Statistics />,
+          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
         },
         {
           path: "/blogs",
