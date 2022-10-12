@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# JS Quizo React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![site-img](../js-quizo/src/assets/screen1.png)
 
-## Available Scripts
+## Live Site Link [https://js-quizo.netlify.app/]
 
-In the project directory, you can run:
+JS Quizo is a quiz application made with React, React Router and Bootstrap 5
 
-### `npm start`
+# Top Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 1. Here You Can Participate In Our Quiz By Selecting a Topic:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You can choose your favorite topic and participate quiz.
 
-### `npm test`
+![topic-img](../js-quizo/src/assets/screem2.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2. At the time of participating a quiz you can see your stats on correct and wrong answer:
 
-### `npm run build`
+You can see the live result. After Click the option you may able to see the correct answer by clicking the 'eye' icon.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![topic-img](../js-quizo/src/assets/screen5.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3. From the statistics page you could see the total question graph:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I have created a bar chart using the total questions data. Here you could check the total question chart based on the topic.
 
-### `npm run eject`
+![topic-img](../js-quizo/src/assets/screen3.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 4. You can read blogs from our blog page:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Finally you can read our articles. You read full paragraph by clicking see more then it will expand.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![topic-img](../js-quizo/src/assets/screen4.png)
