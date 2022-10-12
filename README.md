@@ -12,7 +12,7 @@ JS Quizo is a quiz application made with React, React Router and Bootstrap 5
 
 You can choose your favorite topic and participate quiz.
 
-![topic-img](./src/assets/screem2.png)
+![topic-img](./src/assets/screen2.png)
 
 ## 2. At the time of participating a quiz you can see your stats on correct and wrong answer:
 
