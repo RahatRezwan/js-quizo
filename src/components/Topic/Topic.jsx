@@ -8,7 +8,7 @@ const Topic = ({ topic }) => {
   /* Navigate to the quiz page */
   const quizQuestions = useNavigate();
   const handleTakeQuiz = () => {
-    quizQuestions(`/${name.toLowerCase()}-quiz/${id}`);
+    quizQuestions(`/topics/${id}`);
   };
 
   return (
